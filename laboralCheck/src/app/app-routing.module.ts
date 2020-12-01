@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'listaempleados',
+    loadChildren: () => import('./pages/listaempleados/listaempleados.module').then( m => m.ListaempleadosPageModule)
+  },
+  {
+    path: 'new',
+    loadChildren: () => import('./pages/new/new.module').then( m => m.NewPageModule)
+  },
+  {
+    path: 'edit',
+    loadChildren: () => import('./pages/edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'edit/:id',
+    loadChildren: () => import('./pages/edit/edit.module').then( m => m.EditPageModule)
+  },
 ];
 
 @NgModule({

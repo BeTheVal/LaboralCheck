@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mis empleados</ion-title>
+    <ion-buttons slot="end" padding>
+      <ion-button (click)="toAddEmployee()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="./avatar.svg">
+    </ion-avatar>
+    <ion-label>Lorem ipsum</ion-label>
+    <ion-icon name="pencil" (click)="toEditEmployee(e.id)">
+    </ion-icon>
+    <ion-icon name="blank"></ion-icon>
+    <ion-icon name="trash" (click)="presentAlertConfirm(e)">
+    </ion-icon>
+  </ion-item>
+
+  {{employees}}
+
+</ion-content>
