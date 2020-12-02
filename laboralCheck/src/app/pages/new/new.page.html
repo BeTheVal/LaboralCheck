@@ -1,9 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>new</ion-title>
+    <ion-title>Añadir empleado</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input [(ngModel)]="employee.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Fecha de nacimiento</ion-label>
+    <ion-datetime [(ngModel)]="employee.birthdate" displayFormat="DD/MM/YYYY" min="1994-03-14" max="2012-12-09"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Puesto</ion-label>
+    <ion-input [(ngModel)]="employee.job"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Salario</ion-label>
+    <ion-input [(ngModel)]="employee.salary" type="number"></ion-input>
+  </ion-item>
+  <ion-button (click)="saveEmployee()" expand="block" fill="clear" shape="round">
+    Agregar trabajador
+  </ion-button>
 
 </ion-content>

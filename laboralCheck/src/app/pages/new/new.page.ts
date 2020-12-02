@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Employee } from 'src/app/models/employee';
+import { EmployeesService } from 'src/app/services/employees.service';
+import { PhotoService } from 'src/app/services/photo.service';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 @Component({
   selector: 'app-new',
@@ -7,9 +12,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewPage implements OnInit {
 
-  constructor() { }
+  employee:Employee={
+    name:"",
+    birthdate:"",
+    job:"",
+    salary:0
+  };
+  constructor(private service:EmployeesService , private router:Router, public photoService:PhotoService) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    defineCustomElements(window)
+    await this.photoService.loadSaved();
+
   }
+
+  saveEmployee(){
+    this.service.saveEmployee(this.employee);
+    this.router.navigateByUrl("/listaempleados")
+    
+  }
+  addPhotoToGallery() {
+    this.photoService.addNewToGallery();
+  }
+
+  
+
+
 
 }
