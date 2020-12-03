@@ -48,9 +48,11 @@ Ten un control de la cantidad de tiempo que invierten tus trabajadores en sus ta
 
 
 <!-- Ejemplos de uso con animaciones -->
-![Login Page]
-![Registration Page]
-
+![Firs page]
+![Insert employee]
+![Edit employee]
+![Add Hours employee]
+![Delete employee]
 
 <!-- LICENSE -->
 ## Licencia
@@ -60,6 +62,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[Login Page]: https://github.com/BeTheVal/LaboralCheck/blob/master/Login.png
-[Registration Page]: https://github.com/BeTheVal/LaboralCheck/blob/master/Registro.png
-
+[Insert employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/insertemployee.gif
+[Firs page]: https://github.com/BeTheVal/LaboralCheck/blob/main/initpage.gif
+[Adding employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/addinghoursemployee.gif
+[Delete employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/deleteemployee.gif
+[Edit employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/editemployee.gif
+[Add Hours employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/addinghoursemployee.gif
