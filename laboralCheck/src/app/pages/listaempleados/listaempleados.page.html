@@ -10,11 +10,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-item *ngFor="let e of service.getEmployees()">
-    <ion-avatar slot="start">
-      <ion-img [src]=""></ion-img>
+  <ion-item  *ngFor="let e of service.getEmployees()">
+    <ion-avatar>
+      <img (click)="clickOnEmployee(e.id)" [src]="getImage(e.id)" />
     </ion-avatar>
-    <ion-label>{{e.name}}</ion-label>
+    <ion-label>
+      <h2>{{e.name}}</h2>
+      <h3>{{e.job}}</h3>
+      <p>{{e.salary|currency}}</p>
+    </ion-label>
+    <ion-icon name="blank"></ion-icon>
     <ion-icon name="pencil" (click)="toEditEmployee(e.id)">
     </ion-icon>
     <ion-icon name="blank"></ion-icon>
@@ -22,14 +27,8 @@
     </ion-icon>
   </ion-item>
   <ion-content>
-    <ion-grid>
-      <ion-row>
-      <ion-col size="6" 
-        *ngFor="let photo of photoService.photos; index as i">
-          <ion-img [src]=""></ion-img>
-      </ion-col>
-      </ion-row>
-    </ion-grid>
-  {{employees}}
+  <ion-button (click)="service.deleteAll()" expand="block" fill="clear" shape="round">
+    LocalStorage Clear
+  </ion-button>
 
 </ion-content>

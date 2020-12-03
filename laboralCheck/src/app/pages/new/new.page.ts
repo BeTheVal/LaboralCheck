@@ -16,7 +16,9 @@ export class NewPage implements OnInit {
     name:"",
     birthdate:"",
     job:"",
-    salary:0
+    salary:0,
+    timeworked:0,
+    timespend:0
   };
   constructor(private service:EmployeesService , private router:Router, public photoService:PhotoService) { }
 

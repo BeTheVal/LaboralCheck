@@ -72,4 +72,9 @@ export class EmployeesService {
     this.employees = this.employees.filter(t => t.id != id);
     await this.saveEmployees(this.employees);
   }
+
+  public deleteAll(){
+    localStorage.clear();
+  }
+  
 }

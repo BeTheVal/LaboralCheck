@@ -1,31 +1,29 @@
+<ion-content>
 <ion-header>
   <ion-toolbar>
-    <ion-title>edit</ion-title>
+    <ion-title>Modificar trabajador</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/listaempleados"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-item>
-  <ion-label>Nombre</ion-label>
+  <ion-label position="floating">Nombre</ion-label>
   <ion-input [(ngModel)]="employee.name"></ion-input>
 </ion-item>
 <ion-item>
-  <ion-label position="floating">MM/DD/YYYY</ion-label>
+  <ion-label position="floating">Editar fecha de nacimiento</ion-label>
   <ion-datetime [(ngModel)]="employee.birthdate" displayFormat="MM/DD/YYYY" min="1994-03-14" max="2012-12-09"></ion-datetime>
 </ion-item>
 <ion-item>
-  <ion-label>Puesto</ion-label>
+  <ion-label position="floating">Puesto</ion-label>
   <ion-input [(ngModel)]="employee.job"></ion-input>
 </ion-item>
 <ion-item>
-  <ion-label>Salario</ion-label>
+  <ion-label position="floating">Salario</ion-label>
   <ion-input [(ngModel)]="employee.salary"></ion-input>
 </ion-item>
 <ion-button (click)="saveEmployee()" expand="block" fill="clear" shape="round">
   Guardar cambios
 </ion-button>
-
-<ion-content>
-
 </ion-content>

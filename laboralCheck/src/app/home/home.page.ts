@@ -9,5 +9,8 @@ export class HomePage {
 
   
   constructor() {}
-
+  getImage(id:number){
+    return "../../assets/Icon-image.png"
+  }
+ 
 }

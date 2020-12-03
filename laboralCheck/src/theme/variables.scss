@@ -11,6 +11,26 @@
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
 
+  //** laboral theme **/
+
+  :root {
+    --ion-color-laboral: #69bb7b;
+    --ion-color-laboral-rgb: 105,187,123;
+    --ion-color-laboral-contrast: #000000;
+    --ion-color-laboral-contrast-rgb: 0,0,0;
+    --ion-color-laboral-shade: #5ca56c;
+    --ion-color-laboral-tint: #78c288;
+  }
+  
+  .ion-color-laboral {
+    --ion-color-base: var(--ion-color-laboral);
+    --ion-color-base-rgb: var(--ion-color-laboral-rgb);
+    --ion-color-contrast: var(--ion-color-laboral-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-laboral-contrast-rgb);
+    --ion-color-shade: var(--ion-color-laboral-shade);
+    --ion-color-tint: var(--ion-color-laboral-tint);
+  }
+
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
   --ion-color-secondary-rgb: 61, 194, 255;

@@ -91,6 +91,7 @@ for (let photo of this.photos) {
   public getPhotos(){
     return this.photos;
   }
+
 }
 export interface Photo {
   filepath: string;

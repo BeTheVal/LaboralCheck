@@ -4,4 +4,6 @@ export class Employee {
     birthdate:String;
     job:String;
     salary:number;
+    timeworked:number;
+    timespend:number;
 }
