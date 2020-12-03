@@ -3,6 +3,26 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-color-labo: #69bb7b;
+  --ion-color-labo-rgb: 105,187,123;
+  --ion-color-labo-contrast: #000000;
+  --ion-color-labo-contrast-rgb: 0,0,0;
+  --ion-color-labo-shade: #5ca56c;
+  --ion-color-labo-tint: #78c288;
+}
+
+.ion-color-labo {
+  --ion-color-base: var(--ion-color-labo);
+  --ion-color-base-rgb: var(--ion-color-labo-rgb);
+  --ion-color-contrast: var(--ion-color-labo-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-labo-contrast-rgb);
+  --ion-color-shade: var(--ion-color-labo-shade);
+  --ion-color-tint: var(--ion-color-labo-tint);
+}
+
+
+
+:root {
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -10,26 +30,6 @@
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
-
-  //** laboral theme **/
-
-  :root {
-    --ion-color-laboral: #69bb7b;
-    --ion-color-laboral-rgb: 105,187,123;
-    --ion-color-laboral-contrast: #000000;
-    --ion-color-laboral-contrast-rgb: 0,0,0;
-    --ion-color-laboral-shade: #5ca56c;
-    --ion-color-laboral-tint: #78c288;
-  }
-  
-  .ion-color-laboral {
-    --ion-color-base: var(--ion-color-laboral);
-    --ion-color-base-rgb: var(--ion-color-laboral-rgb);
-    --ion-color-contrast: var(--ion-color-laboral-contrast);
-    --ion-color-contrast-rgb: var(--ion-color-laboral-contrast-rgb);
-    --ion-color-shade: var(--ion-color-laboral-shade);
-    --ion-color-tint: var(--ion-color-laboral-tint);
-  }
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;

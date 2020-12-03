@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>Mis empleados</ion-title>
     <ion-buttons slot="end" padding>
-      <ion-button (click)="toAddEmployee()">
+      <ion-button color="primary" (click)="toAddEmployee()">
         <ion-icon slot="icon-only" name="add"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -17,18 +17,17 @@
     <ion-label>
       <h2>{{e.name}}</h2>
       <h3>{{e.job}}</h3>
-      <p>{{e.salary|currency}}</p>
+      <p>{{e.salary}}€</p>
     </ion-label>
     <ion-icon name="blank"></ion-icon>
-    <ion-icon name="pencil" (click)="toEditEmployee(e.id)">
-    </ion-icon>
+    <ion-button color="secondary" (click)="toEditEmployee(e.id)">
+      <ion-icon name="pencil">
+      </ion-icon>
+    </ion-button>
     <ion-icon name="blank"></ion-icon>
-    <ion-icon name="trash"(click)="alertToDelete(e)">
-    </ion-icon>
+    <ion-button color="danger" (click)="alertToDelete(e)">
+      <ion-icon slot="icon-only" name="trash"></ion-icon>
+    </ion-button>
   </ion-item>
   <ion-content>
-  <ion-button (click)="service.deleteAll()" expand="block" fill="clear" shape="round">
-    LocalStorage Clear
-  </ion-button>
-
 </ion-content>
