@@ -65,6 +65,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [Insert employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/insertemployee.gif
 [Firs page]: https://github.com/BeTheVal/LaboralCheck/blob/main/initpage.gif
 [Adding employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/addinghoursemployee.gif
-[Delete employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/deleteemployee.gif
+[Delete employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/delete.gif
 [Edit employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/editemployee.gif
 [Add Hours employee]: https://github.com/BeTheVal/LaboralCheck/blob/main/addinghoursemployee.gif
