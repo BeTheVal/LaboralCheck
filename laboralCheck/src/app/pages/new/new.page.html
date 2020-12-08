@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>Añadir empleado</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="/listaempleados"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -24,7 +24,7 @@
     <ion-label position="floating">Salario/€</ion-label>
     <ion-input [(ngModel)]="employee.salary" type="number"></ion-input>
   </ion-item>
-  <ion-button *ngIf="employee.name.length > 1" (click)="saveEmployee()" expand="block" fill="clear" shape="round">
+  <ion-button *ngIf="employee.name.length > 1" (click)="saveEmployee()" expand="block" color="laboral" shape="round">
     Agregar trabajador
   </ion-button>
 </ion-content>

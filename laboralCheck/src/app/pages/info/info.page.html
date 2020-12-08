@@ -11,9 +11,9 @@
   <ion-card>
     <ion-img  id="img" [src]="getImage(employee.id)"></ion-img>
     <ion-card-header>
-      <p>{{employee.timeworked}} horas trabajadas , {{employee.timespend}} minutos de descanso</p>
-      <ion-card-subtitle>Añadir horas trabajadas</ion-card-subtitle>
-      <ion-item>
+      <p id="contador" >{{employee.timeworked}} horas trabajadas , {{employee.timespend}} minutos de descanso</p>
+      <ion-card-subtitle class="subtitle">Añadir tiempo de trabajo</ion-card-subtitle>
+      <ion-item >
         <ion-button (click)="addWorkedHours(employee, 1)"  expand="block" fill="clear" shape="round">
           +1 hora
         </ion-button>
@@ -25,7 +25,7 @@
         </ion-button>
       </ion-item>
     
-      <ion-card-subtitle>Añadir horas de descanso</ion-card-subtitle>
+      <ion-card-subtitle class="subtitle">Añadir tiempo de descanso</ion-card-subtitle>
       <ion-item>
       <ion-button (click)="addSpendMinutes(employee, 15)" expand="block" fill="clear" shape="round">
         +15 min
@@ -37,5 +37,7 @@
     </ion-card-header>
   
   </ion-card>
+
+
   
 </ion-content>

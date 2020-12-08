@@ -24,10 +24,5 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-
-ion-content{
-    --ion-background-color:#D3EAF0;
-  }
-ion-header{
-    --ion-background-color:#D3EAF0;
-}
+/* Tip de letra */
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');

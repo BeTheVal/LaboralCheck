@@ -47,7 +47,7 @@ export class ListaempleadosPage implements OnInit {
 
   async alertToDelete(e: Employee) {
     const alert = await this.alertController.create({
-      header: 'Borrar tarea',
+      header: 'Eliminar empleado',
       message: `¿Deseas eliminar a <strong> ${e.name}</strong> de tus empleados?`,
       buttons: [
         {
